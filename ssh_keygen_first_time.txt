@@ -1,0 +1,43 @@
+Farazi Technology@Anan MINGW64 /d/git_proc1 (master)
+$ ssh-keygen -t rsa -b 4096 -C "anwholesquare@gmail.com" -f 
+
+
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in D:/MyWork/git_ssh_keys/id_rsa
+Your public key has been saved in D:/MyWork/git_ssh_keys/id_rsa.pub
+The key fingerprint is:
+SHA256:qAstMPgJEe89lx8sB+UCST/oxGjramn3Ai9TAhXUmC8 anwholesquare@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|..o*o.  .        |
+| o+oo+ o         |
+|..+.+ = .        |
+|o+E=.  B         |
+|* o.+ = S        |
+| O + + + .       |
+|  % o   .        |
+| B * .           |
+|+ + +.           |
++----[SHA256]-----+
+
+Farazi Technology@Anan MINGW64 /d/git_proc1 (master)
+$ eval $(ssh-agent -s)
+
+
+Agent pid 2276
+
+
+Farazi Technology@Anan MINGW64 /d/git_proc1 (master)
+$ ssh-add D:/MyWork/git_ssh_keys/id_rsa
+
+
+Enter passphrase for D:/MyWork/git_ssh_keys/id_rsa:
+Identity added: D:/MyWork/git_ssh_keys/id_rsa (anwholesquare@gmail.com)
+
+
+Farazi Technology@Anan MINGW64 /d/git_proc1 (master)
+$ clip < D:/MyWork/git_ssh_keys/id_rsa.pub
+
+
